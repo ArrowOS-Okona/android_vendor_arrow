@@ -119,6 +119,10 @@ include vendor/arrow/config/bootanimation.mk
 # Fonts
 include vendor/arrow/config/fonts.mk
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUI
+    
 # Packages
 include vendor/arrow/config/packages.mk
 
