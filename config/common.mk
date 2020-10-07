@@ -157,5 +157,8 @@ endif
 # Props
 include vendor/arrow/config/props.mk
 
+# Flatten APEXs for performance
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Sounds
 include vendor/arrow/config/sounds.mk
