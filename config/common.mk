@@ -119,6 +119,10 @@ include vendor/arrow/config/bootanimation.mk
 # Fonts
 include vendor/arrow/config/fonts.mk
 
+# IORap app launch prefetching using Perfetto traces and madvise
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI
