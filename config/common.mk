@@ -131,8 +131,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # ART
 # Optimize everything for preopt
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
-# Don't preopt prebuilts
-DONT_DEXPREOPT_PREBUILTS := true
 
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS), true)
 # Use 64-bit dex2oat for better dexopt time.
